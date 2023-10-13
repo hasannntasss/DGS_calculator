@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGS Puan Hesaplama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DGS Puan Hesaplama</h1>
+        <form action="page.php" method="post">
+            <label for="mat">Matematik:</label>
+            <input type="text" id="matdoru" name="matdoru" placeholder="Doğru" required>
+            <input type="text" id="matyanlis" name="matyanlis" placeholder="Yanlış" required><br><br>
+
+            <label for="dil">Türkçe:</label>
+            <input type="text" id="dildoru" name="dildoru" placeholder="Doğru" required>
+            <input type="text" id="dilyanlis" name="dilyanlis" placeholder="Yanlış" required><br><br>
+
+            <label for="onlisans">Önlisans Başarı Puanı:</label>
+            <input type="text" id="onpuan" name="onpuan" required><br><br>
+
+            <label for="alan">Alanınız:</label> <br>
+            <div class="radio-container">
+                <label for="1">
+                    <input type="radio" id="1" name="alan" value="1">
+                </label>Sayısal
+                <label for="2">
+                    <input type="radio" id="2" name="alan" value="2">
+                </label>Sözel
+                <label for="3">
+                    <input type="radio" id="3" name="alan" value="3">
+                </label>EşitAğırlık
+            </div> <br>
+
+            <label for="before">2023 öncesinde DGS ile bir programa yerleştirildiniz mi ?:</label> <br>
+
+            <div class="radio-container">
+                <label for="1" class="yerlesim">
+                    <input type="radio" id="1" name="yerlesim" value="1">
+                </label>Evet yerleştirildim
+
+                <label for="2" class="yerlesim">
+                    <input type="radio" id="2" name="yerlesim" value="2">
+                </label>Hayır Yerleştirilmedim
+            </div> <br>
+
+            <input type="submit" value="Hesapla">
+            <input type="reset" value="Temizle">
+        </form>
+    </div>
+</body>
+</html>
